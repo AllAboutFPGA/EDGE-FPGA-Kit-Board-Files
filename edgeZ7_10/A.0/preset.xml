@@ -229,7 +229,7 @@
 		<user_parameter name="CONFIG.PCW_UART_PERIPHERAL_CLKSRC" value="IO PLL"/>
 		<user_parameter name="CONFIG.PCW_UART_PERIPHERAL_DIVISOR0" value="10"/>
 		<user_parameter name="CONFIG.PCW_UART_PERIPHERAL_FREQMHZ" value="100"/> 
-        <user_parameter name="CONFIG.PCW_UIPARAM_DDR_FREQ_MHZ" value="333.333333"/> 
+        <user_parameter name="CONFIG.PCW_UIPARAM_DDR_FREQ_MHZ" value="266.6666"/> 
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_PARTNO" value="MT41K256M16 RE-125"/> 
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DRAM_WIDTH" value="16 Bits"/>
 		<user_parameter name="CONFIG.PCW_UIPARAM_DDR_ECC" value="Disabled"/>
