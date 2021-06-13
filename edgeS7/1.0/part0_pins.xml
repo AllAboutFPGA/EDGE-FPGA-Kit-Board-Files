@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<part_info part_name="xc7s15ftgb196-1">
+<pins>
+  <pin index="0" name ="clk" iostandard="LVCMOS33" loc="H11"/>
+  <pin index="1" name ="dip_switches_16bits_tri_i_0" iostandard="LVCMOS33" loc="K11"/>
+  <pin index="2" name ="dip_switches_16bits_tri_i_1" iostandard="LVCMOS33" loc="M11"/>
+  <pin index="3" name ="dip_switches_16bits_tri_i_2" iostandard="LVCMOS33" loc="N14"/>
+  <pin index="4" name ="dip_switches_16bits_tri_i_3" iostandard="LVCMOS33" loc="P12"/>
+  <pin index="5" name ="dip_switches_16bits_tri_i_4" iostandard="LVCMOS33" loc="N10"/>
+  <pin index="6" name ="dip_switches_16bits_tri_i_5" iostandard="LVCMOS33" loc="P10"/>
+  <pin index="7" name ="dip_switches_16bits_tri_i_6" iostandard="LVCMOS33" loc="N10"/>
+  <pin index="8" name ="dip_switches_16bits_tri_i_7" iostandard="LVCMOS33" loc="N4"/>
+  <pin index="9" name ="dip_switches_16bits_tri_i_8" iostandard="LVCMOS33" loc="L2"/>
+  <pin index="10" name ="dip_switches_16bits_tri_i_9" iostandard="LVCMOS33" loc="P3"/>
+  <pin index="11" name ="dip_switches_16bits_tri_i_10" iostandard="LVCMOS33" loc="N1"/>
+  <pin index="12" name ="dip_switches_16bits_tri_i_11" iostandard="LVCMOS33" loc="M2"/>
+  <pin index="13" name ="dip_switches_16bits_tri_i_12" iostandard="LVCMOS33" loc="L1"/>
+  <pin index="14" name ="dip_switches_16bits_tri_i_13" iostandard="LVCMOS33" loc="J3"/>
+  <pin index="15" name ="dip_switches_16bits_tri_i_14" iostandard="LVCMOS33" loc="K3"/>
+  <pin index="16" name ="dip_switches_16bits_tri_i_15" iostandard="LVCMOS33" loc="J1"/>
+  <pin index="17" name ="led_16bits_tri_o_0" iostandard="LVCMOS33" loc="K12"/>
+  <pin index="18" name ="led_16bits_tri_o_1" iostandard="LVCMOS33" loc="M12"/>
+  <pin index="19" name ="led_16bits_tri_o_2" iostandard="LVCMOS33" loc="M14"/>
+  <pin index="20" name ="led_16bits_tri_o_3" iostandard="LVCMOS33" loc="P13"/>
+  <pin index="21" name ="led_16bits_tri_o_4" iostandard="LVCMOS33" loc="N11"/>
+  <pin index="22" name ="led_16bits_tri_o_5" iostandard="LVCMOS33" loc="P11"/>
+  <pin index="23" name ="led_16bits_tri_o_6" iostandard="LVCMOS33" loc="L5"/>
+  <pin index="24" name ="led_16bits_tri_o_7" iostandard="LVCMOS33" loc="M4"/>
+  <pin index="25" name ="led_16bits_tri_o_8" iostandard="LVCMOS33" loc="J4"/>
+  <pin index="26" name ="led_16bits_tri_o_9" iostandard="LVCMOS33" loc="L3"/>
+  <pin index="27" name ="led_16bits_tri_o_10" iostandard="LVCMOS33" loc="P4"/>
+  <pin index="28" name ="led_16bits_tri_o_11" iostandard="LVCMOS33" loc="K4"/>
+  <pin index="29" name ="led_16bits_tri_o_12" iostandard="LVCMOS33" loc="P2"/>
+  <pin index="30" name ="led_16bits_tri_o_13" iostandard="LVCMOS33" loc="J2"/>
+  <pin index="31" name ="led_16bits_tri_o_14" iostandard="LVCMOS33" loc="M3"/>
+  <pin index="32" name ="led_16bits_tri_o_15" iostandard="LVCMOS33" loc="M1"/>
+  <pin index="33" name ="push_buttons_5bits_tri_i_0" iostandard="LVCMOS33" loc="J13"/>
+  <pin index="34" name ="push_buttons_5bits_tri_i_1" iostandard="LVCMOS33" loc="L13"/>
+  <pin index="35" name ="push_buttons_5bits_tri_i_2" iostandard="LVCMOS33" loc="J14"/>
+  <pin index="36" name ="push_buttons_5bits_tri_i_3" iostandard="LVCMOS33" loc="J11"/>
+  <pin index="37" name ="qspi_csn_i" iostandard="LVCMOS33" loc="C11"/>
+  <pin index="38" name ="qspi_db0_i" iostandard="LVCMOS33" loc="B11"/>
+  <pin index="39" name ="qspi_db1_i" iostandard="LVCMOS33" loc="B12"/>
+  <pin index="40" name ="qspi_db2_i" iostandard="LVCMOS33" loc="D10"/>
+  <pin index="41" name ="qspi_db3_i" iostandard="LVCMOS33" loc="C10"/>
+  <pin index="42" name ="reset" iostandard="LVCMOS33" loc="J12"/>
+  <pin index="43" name ="seven_seg_led_an_tri_o_0" iostandard="LVCMOS33" loc="H4"/>
+  <pin index="44" name ="seven_seg_led_an_tri_o_1" iostandard="LVCMOS33" loc="H3"/>
+  <pin index="45" name ="seven_seg_led_an_tri_o_2" iostandard="LVCMOS33" loc="H2"/>
+  <pin index="46" name ="seven_seg_led_an_tri_o_3" iostandard="LVCMOS33" loc="H1"/>
+  <pin index="47" name ="seven_seg_led_disp_tri_o_0" iostandard="LVCMOS33" loc="J2"/>
+  <pin index="48" name ="seven_seg_led_disp_tri_o_1" iostandard="LVCMOS33" loc="K4"/>
+  <pin index="49" name ="seven_seg_led_disp_tri_o_2" iostandard="LVCMOS33" loc="J4"/>
+  <pin index="50" name ="seven_seg_led_disp_tri_o_3" iostandard="LVCMOS33" loc="M1"/>
+  <pin index="51" name ="seven_seg_led_disp_tri_o_4" iostandard="LVCMOS33" loc="M3"/>
+  <pin index="52" name ="seven_seg_led_disp_tri_o_5" iostandard="LVCMOS33" loc="P2"/>
+  <pin index="53" name ="seven_seg_led_disp_tri_o_6" iostandard="LVCMOS33" loc="P4"/>
+  <pin index="54" name ="seven_seg_led_disp_tri_o_7" iostandard="LVCMOS33" loc="L3"/>
+  <pin index="55" name ="usb_uart_rxd" iostandard="LVCMOS33" loc="G1"/>
+  <pin index="56" name ="usb_uart_txd" iostandard="LVCMOS33" loc="F2"/>
+</pins>
+</part_info>
