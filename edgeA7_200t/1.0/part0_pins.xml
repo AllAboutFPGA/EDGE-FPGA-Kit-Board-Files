@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<part_info part_name="xc7a200tfbg484-1">
+<pins>
+  <pin index="0" name ="clk" iostandard="LVCMOS33" loc="V4"/>
+  <pin index="1" name ="dip_switches_8bits_tri_i_0" iostandard="LVCMOS33" loc="W4"/>
+  <pin index="2" name ="dip_switches_8bits_tri_i_1" iostandard="LVCMOS33" loc="R4"/>
+  <pin index="3" name ="dip_switches_8bits_tri_i_2" iostandard="LVCMOS33" loc="T4"/>
+  <pin index="4" name ="dip_switches_8bits_tri_i_3" iostandard="LVCMOS33" loc="Y6"/>
+  <pin index="5" name ="dip_switches_8bits_tri_i_4" iostandard="LVCMOS33" loc="AA6"/>
+  <pin index="6" name ="dip_switches_8bits_tri_i_5" iostandard="LVCMOS33" loc="AB7"/>
+  <pin index="7" name ="dip_switches_8bits_tri_i_6" iostandard="LVCMOS33" loc="AB6"/>
+  <pin index="8" name ="dip_switches_8bits_tri_i_7" iostandard="LVCMOS33" loc="AA8"/>
+  <pin index="9" name ="led_8bits_tri_o_0" iostandard="LVCMOS33" loc="AB3"/>
+  <pin index="10" name ="led_8bits_tri_o_1" iostandard="LVCMOS33" loc="AB2"/>
+  <pin index="11" name ="led_8bits_tri_o_2" iostandard="LVCMOS33" loc="Y3"/>
+  <pin index="12" name ="led_8bits_tri_o_3" iostandard="LVCMOS33" loc="AA3"/>
+  <pin index="13" name ="led_8bits_tri_o_4" iostandard="LVCMOS33" loc="AA5"/>
+  <pin index="14" name ="led_8bits_tri_o_5" iostandard="LVCMOS33" loc="AB5"/>
+  <pin index="15" name ="led_8bits_tri_o_6" iostandard="LVCMOS33" loc="Y4"/>
+  <pin index="16" name ="led_8bits_tri_o_7" iostandard="LVCMOS33" loc="AA4"/>
+  <pin index="17" name ="push_buttons_3bits_tri_i_0" iostandard="LVCMOS33" loc="Y8"/>
+  <pin index="18" name ="push_buttons_3bits_tri_i_1" iostandard="LVCMOS33" loc="AB8"/>
+  <pin index="19" name ="push_buttons_3bits_tri_i_2" iostandard="LVCMOS33" loc="Y7"/>
+  <pin index="20" name ="qspi_csn_i" iostandard="LVCMOS33" loc="T19"/>
+  <pin index="21" name ="qspi_db0_i" iostandard="LVCMOS33" loc="P22"/>
+  <pin index="22" name ="qspi_db1_i" iostandard="LVCMOS33" loc="R22"/>
+  <pin index="23" name ="qspi_db2_i" iostandard="LVCMOS33" loc="P21"/>
+  <pin index="24" name ="qspi_db3_i" iostandard="LVCMOS33" loc="R21"/>
+  <pin index="25" name ="reset" iostandard="LVCMOS33" loc="Y9"/>
+  <pin index="26" name ="usb_uart_rxd" iostandard="LVCMOS33" loc="AA11"/>
+  <pin index="27" name ="usb_uart_txd" iostandard="LVCMOS33" loc="AA10"/>
+</pins>
+</part_info>
