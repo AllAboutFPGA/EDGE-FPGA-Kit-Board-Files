@@ -8,7 +8,7 @@
   <pin index="4" name ="dip_switches_16bits_tri_i_3" iostandard="LVCMOS33" loc="P12"/>
   <pin index="5" name ="dip_switches_16bits_tri_i_4" iostandard="LVCMOS33" loc="N10"/>
   <pin index="6" name ="dip_switches_16bits_tri_i_5" iostandard="LVCMOS33" loc="P10"/>
-  <pin index="7" name ="dip_switches_16bits_tri_i_6" iostandard="LVCMOS33" loc="N10"/>
+  <pin index="7" name ="dip_switches_16bits_tri_i_6" iostandard="LVCMOS33" loc="M10"/>
   <pin index="8" name ="dip_switches_16bits_tri_i_7" iostandard="LVCMOS33" loc="N4"/>
   <pin index="9" name ="dip_switches_16bits_tri_i_8" iostandard="LVCMOS33" loc="L2"/>
   <pin index="10" name ="dip_switches_16bits_tri_i_9" iostandard="LVCMOS33" loc="P3"/>
