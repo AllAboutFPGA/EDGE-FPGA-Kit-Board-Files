@@ -8,7 +8,7 @@
 <compatible_board_revisions>
   <revision id="0">A.0</revision>
 </compatible_board_revisions>
-<file_version>1.0</file_version>
+<file_version>1.1</file_version>
 <description>EdgeZ7_10</description>
 <components>
   <component name="part0" display_name="EdgeZ7_10" type="fpga" part_name="xc7z010clg400-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="http://www.allaboutfpga.com">
@@ -78,7 +78,7 @@
           <parameter name="frequency" value="50000000" />
        </parameters>
       </interface>
-	  <interface mode="slave" name="hdmi_in" type="allaboutfpga.com:interface:tmds_rtl:1.0" of_component="hdmi_in" preset_proc="hdmi_in_preset">
+	  <interface mode="slave" name="hdmi_in" type="allaboutfpga.com:interface:tmds_rtl:1.0" of_component="hdmi_in">
         <preferred_ips>
 			<preferred_ip vendor="allaboutfpga.com" library="ip" name="dvi2rgb" order="0"/>
 		</preferred_ips>
@@ -109,7 +109,7 @@
           </port_map>
         </port_maps>
       </interface>
-	   <interface mode="master" name="hdmi_in_ddc" type="xilinx.com:interface:iic_rtl:1.0" of_component="hdmi_in" preset_proc="hdmi_in_preset">
+	   <interface mode="master" name="hdmi_in_ddc" type="xilinx.com:interface:iic_rtl:1.0" of_component="hdmi_in">
         <description>HDMI DDC</description>
 		<preferred_ips>
 			<preferred_ip vendor="allaboutfpga.com" library="ip" name="dvi2rgb" order="0"/>
@@ -711,8 +711,8 @@
     <connection_map name="part0_hdmi_out_1" c1_st_index="13" c1_end_index="20" c2_st_index="0" c2_end_index="7"/>
 	<connection_map name="part0_hdmi_out_ddc" c1_st_index="21" c1_end_index="22" c2_st_index="0" c2_end_index="1"/>
   </connection>
-  <connection name="part0_hdmi_in_hpd_led" component1="part0" component2="hdmi_in_hpd_led">
-    <connection_map name="part0_hdmi_in_hpd_led_1" c1_st_index="23" c1_end_index="23" c2_st_index="0" c2_end_index="0"/>
+  <connection name="part0_hdmi_hpd" component1="part0" component2="hdmi_hpd">
+    <connection_map name="part0_hdmi_hpd_1" c1_st_index="23" c1_end_index="23" c2_st_index="0" c2_end_index="0"/>
   </connection>
   <connection name="part0_hdmi_out_en" component1="part0" component2="hdmi_out_en">
     <connection_map name="part0_hdmi_out_en_1" c1_st_index="24" c1_end_index="24" c2_st_index="0" c2_end_index="0"/>
