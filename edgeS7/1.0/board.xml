@@ -304,8 +304,8 @@
   <connection name="part0_led_16bits" component1="part0" component2="led_16bits">
     <connection_map name="part0_led_16bits_1" c1_st_index="17" c1_end_index="32" c2_st_index="0" c2_end_index="15"/>
   </connection>
-  <connection name="part0_push_buttons_5bits" component1="part0" component2="push_buttons_5bits">
-    <connection_map name="part0_push_buttons_5bits_1" c1_st_index="33" c1_end_index="36" c2_st_index="0" c2_end_index="3"/>
+  <connection name="part0_push_buttons_4bits" component1="part0" component2="push_buttons_4bits">
+    <connection_map name="part0_push_buttons_4bits_1" c1_st_index="33" c1_end_index="36" c2_st_index="0" c2_end_index="3"/>
   </connection>
   <connection name="part0_qspi_flash" component1="part0" component2="qspi_flash">
     <connection_map name="part0_qspi_flash_1" c1_st_index="37" c1_end_index="41" c2_st_index="0" c2_end_index="4"/>

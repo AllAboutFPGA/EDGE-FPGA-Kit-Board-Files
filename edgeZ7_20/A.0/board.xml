@@ -711,8 +711,8 @@
     <connection_map name="part0_hdmi_out_1" c1_st_index="13" c1_end_index="20" c2_st_index="0" c2_end_index="7"/>
 	<connection_map name="part0_hdmi_out_ddc" c1_st_index="21" c1_end_index="22" c2_st_index="0" c2_end_index="1"/>
   </connection>
-  <connection name="part0_hdmi_in_hpd_led" component1="part0" component2="hdmi_in_hpd_led">
-    <connection_map name="part0_hdmi_in_hpd_led_1" c1_st_index="23" c1_end_index="23" c2_st_index="0" c2_end_index="0"/>
+  <connection name="part0_hdmi_hpd" component1="part0" component2="hdmi_hpd">
+    <connection_map name="part0_hdmi_hpd_1" c1_st_index="23" c1_end_index="23" c2_st_index="0" c2_end_index="0"/>
   </connection>
   <connection name="part0_hdmi_out_en" component1="part0" component2="hdmi_out_en">
     <connection_map name="part0_hdmi_out_en_1" c1_st_index="24" c1_end_index="24" c2_st_index="0" c2_end_index="0"/>
