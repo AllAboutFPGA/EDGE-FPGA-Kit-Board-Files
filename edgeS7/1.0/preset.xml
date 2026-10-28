@@ -252,7 +252,7 @@
     <ip vendor="xilinx.com" library="ip" name="microblaze_mcs" ip_interface="UART">
         <user_parameters>
           <user_parameter name="CONFIG.USE_UART_RX" value="1"/> 
-          <user_parameter name="CONFIG.USE_UART_RX" value="1"/> 
+          <user_parameter name="CONFIG.USE_UART_TX" value="1"/> 
         </user_parameters>
     </ip>
   </ip_preset>
