@@ -3,7 +3,7 @@
    <ip_preset preset_proc_name="qspi_preset">
 	<ip vendor="xilinx.com" library="ip" name="axi_quad_spi">
 		<user_parameters>
-			<user_parameter name="CONFIG.C_SPI_MEMORY" value="2"/>
+			<user_parameter name="CONFIG.C_SPI_MEMORY" value="3"/>
 			<user_parameter name="CONFIG.C_SPI_MODE" value="2"/>
 			<user_parameter name="CONFIG.C_C_SCK_RATIO" value="2"/>
 			<user_parameter name="CONFIG.C_USE_STARTUP" value="1"/>
