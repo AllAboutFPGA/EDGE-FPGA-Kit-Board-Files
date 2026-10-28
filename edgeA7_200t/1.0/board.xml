@@ -8,7 +8,7 @@
 <compatible_board_revisions>
   <revision id="0">1.0</revision>
 </compatible_board_revisions>
-<file_version>1.1</file_version>
+<file_version>1.2</file_version>
 <description>edgeA7_200t</description>
 <components>
   <component name="part0" display_name="edgeA7_200t" type="fpga" part_name="xc7a200tfbg484-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://allaboutfpga.com">
@@ -211,13 +211,13 @@
 	<description>LEDs 7 to 0</description>
   </component>
   <component name="push_buttons_3bits" display_name="3 Push Buttons" type="chip" sub_type="push_button" major_group="GPIO">
-	<description>Push buttons 2 to 0 [Right Left Up]</description>
+	<description>Push buttons PB3 to PB1 (bit 0 is PB1), active high</description>
   </component>
   <component name="qspi_flash" display_name="QSPI Flash" type="chip" sub_type="memory_flash_qspi" major_group="External Memory">
-	<description>QSPI Flash</description>
+	<description>16 MB Quad SPI flash (Spansion S25FL128L)</description>
   </component>
-  <component name="reset" display_name="Reset Signal (Down)" type="chip" sub_type="reset" major_group="Reset">
-	<description>Reset button (Down)</description>
+  <component name="reset" display_name="Reset (PB4)" type="chip" sub_type="reset" major_group="Reset">
+	<description>Push button PB4 (Y9), active high</description>
   </component>
   <component name="sys_clock" display_name="System Clock" type="chip" sub_type="system_clock" major_group="Clocks">
 	<description>50 MHz System Clock</description>
