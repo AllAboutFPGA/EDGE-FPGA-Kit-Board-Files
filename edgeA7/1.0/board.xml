@@ -13,85 +13,6 @@
 <components>
   <component name="part0" display_name="edgeA7" type="fpga" part_name="xc7a35tftg256-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://allaboutfpga.com">
     <interfaces>
-	<interface mode="master" name="cellular_ram" type="xilinx.com:interface:emc_rtl:1.0" of_component="cellular_ram" preset_proc="sram_preset">
-        <description>512KB SRAM</description>
-		<port_maps>
-          <port_map logical_port="ADDR" physical_port="cellular_ram_addr" dir="inout" left="18" right="0"> 
-            <pin_maps>
-              <pin_map port_index="0" component_pin="cellular_ram_addr_0"/> 
-              <pin_map port_index="1" component_pin="cellular_ram_addr_1"/> 
-              <pin_map port_index="2" component_pin="cellular_ram_addr_2"/> 
-              <pin_map port_index="3" component_pin="cellular_ram_addr_3"/> 
-              <pin_map port_index="4" component_pin="cellular_ram_addr_4"/> 
-              <pin_map port_index="5" component_pin="cellular_ram_addr_5"/> 
-              <pin_map port_index="6" component_pin="cellular_ram_addr_6"/> 
-              <pin_map port_index="7" component_pin="cellular_ram_addr_7"/> 
-              <pin_map port_index="8" component_pin="cellular_ram_addr_8"/> 
-              <pin_map port_index="9" component_pin="cellular_ram_addr_9"/> 
-              <pin_map port_index="10" component_pin="cellular_ram_addr_10"/> 
-              <pin_map port_index="11" component_pin="cellular_ram_addr_11"/> 
-              <pin_map port_index="12" component_pin="cellular_ram_addr_12"/> 
-              <pin_map port_index="13" component_pin="cellular_ram_addr_13"/> 
-              <pin_map port_index="14" component_pin="cellular_ram_addr_14"/> 
-              <pin_map port_index="15" component_pin="cellular_ram_addr_15"/> 
-              <pin_map port_index="16" component_pin="cellular_ram_addr_16"/> 
-              <pin_map port_index="17" component_pin="cellular_ram_addr_17"/> 
-              <pin_map port_index="18" component_pin="cellular_ram_addr_18"/>
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="DQ_O" physical_port="cellular_ram_dq_o" dir="out" left="7" right="0"> 
-            <pin_maps>
-              <pin_map port_index="0" component_pin="cellular_ram_dq_0"/> 
-              <pin_map port_index="1" component_pin="cellular_ram_dq_1"/> 
-              <pin_map port_index="2" component_pin="cellular_ram_dq_2"/> 
-              <pin_map port_index="3" component_pin="cellular_ram_dq_3"/> 
-              <pin_map port_index="4" component_pin="cellular_ram_dq_4"/> 
-              <pin_map port_index="5" component_pin="cellular_ram_dq_5"/> 
-              <pin_map port_index="6" component_pin="cellular_ram_dq_6"/> 
-              <pin_map port_index="7" component_pin="cellular_ram_dq_7"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="DQ_I" physical_port="cellular_ram_dq_i" dir="in" left="7" right="0"> 
-            <pin_maps>
-              <pin_map port_index="0" component_pin="cellular_ram_dq_0"/> 
-              <pin_map port_index="1" component_pin="cellular_ram_dq_1"/> 
-              <pin_map port_index="2" component_pin="cellular_ram_dq_2"/> 
-              <pin_map port_index="3" component_pin="cellular_ram_dq_3"/> 
-              <pin_map port_index="4" component_pin="cellular_ram_dq_4"/> 
-              <pin_map port_index="5" component_pin="cellular_ram_dq_5"/> 
-              <pin_map port_index="6" component_pin="cellular_ram_dq_6"/> 
-              <pin_map port_index="7" component_pin="cellular_ram_dq_7"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="DQ_T" physical_port="cellular_ram_dq_t" dir="out" left="7" right="0"> 
-            <pin_maps>
-              <pin_map port_index="0" component_pin="cellular_ram_dq_0"/> 
-              <pin_map port_index="1" component_pin="cellular_ram_dq_1"/> 
-              <pin_map port_index="2" component_pin="cellular_ram_dq_2"/> 
-              <pin_map port_index="3" component_pin="cellular_ram_dq_3"/> 
-              <pin_map port_index="4" component_pin="cellular_ram_dq_4"/> 
-              <pin_map port_index="5" component_pin="cellular_ram_dq_5"/> 
-              <pin_map port_index="6" component_pin="cellular_ram_dq_6"/> 
-              <pin_map port_index="7" component_pin="cellular_ram_dq_7"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="OEN" physical_port="cellular_ram_oen" dir="inout">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="cellular_ram_oen"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="WEN" physical_port="cellular_ram_wen" dir="inout">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="cellular_ram_wen"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="CE_N" physical_port="cellular_ram_ce_n" dir="inout">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="cellular_ram_ce_n"/> 
-            </pin_maps>
-          </port_map>
-        </port_maps>
-      </interface>
       <interface mode="master" name="dip_switches_16bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="dip_switches_16bits" preset_proc="dip_switches_16bits_preset">
         <port_maps>
           <port_map logical_port="TRI_I" physical_port="dip_switches_16bits_tri_i" dir="in" left="15" right="0"> 
@@ -343,9 +264,6 @@
       </interface>
 	</interfaces>
   </component>
-  <component name="cellular_ram" display_name="Cell RAM" type="chip" sub_type="memory_flash_bpi" major_group="External Memory">
-	<description>512KB SRAM</description>
-  </component>
   <component name="dip_switches_16bits" display_name="16 Switches" type="chip" sub_type="switch" major_group="GPIO">
 	<description>Switches 15 to 0</description>
   </component>
@@ -380,17 +298,14 @@
   </jtag_chain>
 </jtag_chains>
 <connections>
-  <connection name="part0_cellular_ram" component1="part0" component2="cellular_ram">
-    <connection_map name="part0_cellular_ram_1" c1_st_index="1" c1_end_index="30" c2_st_index="0" c2_end_index="29"/>
-  </connection>
   <connection name="part0_dip_switches_16bits" component1="part0" component2="dip_switches_16bits">
     <connection_map name="part0_dip_switches_16bits_1" c1_st_index="31" c1_end_index="46" c2_st_index="0" c2_end_index="15"/>
   </connection>
   <connection name="part0_led_16bits" component1="part0" component2="led_16bits">
     <connection_map name="part0_led_16bits_1" c1_st_index="47" c1_end_index="62" c2_st_index="0" c2_end_index="15"/>
   </connection>
-  <connection name="part0_push_buttons_5bits" component1="part0" component2="push_buttons_5bits">
-    <connection_map name="part0_push_buttons_5bits_1" c1_st_index="63" c1_end_index="66" c2_st_index="0" c2_end_index="3"/>
+  <connection name="part0_push_buttons_4bits" component1="part0" component2="push_buttons_4bits">
+    <connection_map name="part0_push_buttons_4bits_1" c1_st_index="63" c1_end_index="66" c2_st_index="0" c2_end_index="3"/>
   </connection>
   <connection name="part0_qspi_flash" component1="part0" component2="qspi_flash">
     <connection_map name="part0_qspi_flash_1" c1_st_index="67" c1_end_index="71" c2_st_index="0" c2_end_index="4"/>
