@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Vivado board file for the EDGE Artix 7 (XC7A100T) board (XC7A100T-1FTG256C). Invent Logics / allaboutfpga.com -->
+<board schema_version="2.0" vendor="allaboutfpga.com" name="edgeA7_100t" display_name="EDGE Artix 7 (XC7A100T)" url="https://allaboutfpga.com" preset_file="preset.xml">
+<compatible_board_revisions>
+  <revision id="0">1.0</revision>
+</compatible_board_revisions>
+<file_version>1.0</file_version>
+<description>EDGE Artix 7 (XC7A100T) FPGA development board with XC7A100T-1FTG256C, 32 MB SDRAM, 8 MB QSPI flash, 50 MHz clock</description>
+<components>
+  <component name="part0" display_name="EDGE Artix 7 (XC7A100T)" type="fpga" part_name="xc7a100tftg256-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://allaboutfpga.com">
+    <description>FPGA part on the board</description>
+    <interfaces>
+      <interface mode="master" name="dip_switches_16bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="dip_switches_16bits" preset_proc="dip_switches_16bits_preset">
+        <port_maps>
+          <port_map logical_port="TRI_I" physical_port="dip_switches_16bits_tri_i" dir="in" left="15" right="0">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="dip_switches_16bits_tri_i_0"/>
+              <pin_map port_index="1" component_pin="dip_switches_16bits_tri_i_1"/>
+              <pin_map port_index="2" component_pin="dip_switches_16bits_tri_i_2"/>
+              <pin_map port_index="3" component_pin="dip_switches_16bits_tri_i_3"/>
+              <pin_map port_index="4" component_pin="dip_switches_16bits_tri_i_4"/>
+              <pin_map port_index="5" component_pin="dip_switches_16bits_tri_i_5"/>
+              <pin_map port_index="6" component_pin="dip_switches_16bits_tri_i_6"/>
+              <pin_map port_index="7" component_pin="dip_switches_16bits_tri_i_7"/>
+              <pin_map port_index="8" component_pin="dip_switches_16bits_tri_i_8"/>
+              <pin_map port_index="9" component_pin="dip_switches_16bits_tri_i_9"/>
+              <pin_map port_index="10" component_pin="dip_switches_16bits_tri_i_10"/>
+              <pin_map port_index="11" component_pin="dip_switches_16bits_tri_i_11"/>
+              <pin_map port_index="12" component_pin="dip_switches_16bits_tri_i_12"/>
+              <pin_map port_index="13" component_pin="dip_switches_16bits_tri_i_13"/>
+              <pin_map port_index="14" component_pin="dip_switches_16bits_tri_i_14"/>
+              <pin_map port_index="15" component_pin="dip_switches_16bits_tri_i_15"/>
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="master" name="led_16bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="led_16bits" preset_proc="led_16bits_preset">
+        <port_maps>
+          <port_map logical_port="TRI_O" physical_port="led_16bits_tri_o" dir="out" left="15" right="0">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="led_16bits_tri_o_0"/>
+              <pin_map port_index="1" component_pin="led_16bits_tri_o_1"/>
+              <pin_map port_index="2" component_pin="led_16bits_tri_o_2"/>
+              <pin_map port_index="3" component_pin="led_16bits_tri_o_3"/>
+              <pin_map port_index="4" component_pin="led_16bits_tri_o_4"/>
+              <pin_map port_index="5" component_pin="led_16bits_tri_o_5"/>
+              <pin_map port_index="6" component_pin="led_16bits_tri_o_6"/>
+              <pin_map port_index="7" component_pin="led_16bits_tri_o_7"/>
+              <pin_map port_index="8" component_pin="led_16bits_tri_o_8"/>
+              <pin_map port_index="9" component_pin="led_16bits_tri_o_9"/>
+              <pin_map port_index="10" component_pin="led_16bits_tri_o_10"/>
+              <pin_map port_index="11" component_pin="led_16bits_tri_o_11"/>
+              <pin_map port_index="12" component_pin="led_16bits_tri_o_12"/>
+              <pin_map port_index="13" component_pin="led_16bits_tri_o_13"/>
+              <pin_map port_index="14" component_pin="led_16bits_tri_o_14"/>
+              <pin_map port_index="15" component_pin="led_16bits_tri_o_15"/>
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="master" name="push_buttons_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="push_buttons_4bits" preset_proc="push_buttons_4bits_preset">
+        <port_maps>
+          <port_map logical_port="TRI_I" physical_port="push_buttons_4bits_tri_i" dir="in" left="3" right="0">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="push_buttons_4bits_tri_i_0"/>
+              <pin_map port_index="1" component_pin="push_buttons_4bits_tri_i_1"/>
+              <pin_map port_index="2" component_pin="push_buttons_4bits_tri_i_2"/>
+              <pin_map port_index="3" component_pin="push_buttons_4bits_tri_i_3"/>
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="master" name="qspi_flash" type="xilinx.com:interface:spi_rtl:1.0" of_component="qspi_flash" preset_proc="qspi_preset">
+        <description>8 MB Quad SPI configuration flash (SCK is the dedicated CCLK pin, reached through STARTUPE2)</description>
+        <preferred_ips>
+          <preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
+        </preferred_ips>
+        <port_maps>
+          <port_map logical_port="IO0_I" physical_port="qspi_db0_i" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db0"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO0_O" physical_port="qspi_db0_o" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db0"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO0_T" physical_port="qspi_db0_t" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db0"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO1_I" physical_port="qspi_db1_i" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db1"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO1_O" physical_port="qspi_db1_o" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db1"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO1_T" physical_port="qspi_db1_t" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db1"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO2_I" physical_port="qspi_db2_i" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db2"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO2_O" physical_port="qspi_db2_o" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db2"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO2_T" physical_port="qspi_db2_t" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db2"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO3_I" physical_port="qspi_db3_i" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db3"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO3_O" physical_port="qspi_db3_o" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db3"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO3_T" physical_port="qspi_db3_t" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db3"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="SS_I" physical_port="qspi_csn_i" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_csn"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="SS_O" physical_port="qspi_csn_o" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_csn"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="SS_T" physical_port="qspi_csn_t" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_csn"/>
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="slave" name="reset" type="xilinx.com:signal:reset_rtl:1.0" of_component="reset">
+        <port_maps>
+          <port_map logical_port="RST" physical_port="reset" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="reset"/>
+            </pin_maps>
+          </port_map>
+        </port_maps>
+        <parameters>
+          <parameter name="rst_polarity" value="1"/>
+        </parameters>
+      </interface>
+      <interface mode="master" name="seven_seg_led_an" type="xilinx.com:interface:gpio_rtl:1.0" of_component="seven_seg_led_an" preset_proc="seven_seg_led_an_preset">
+        <port_maps>
+          <port_map logical_port="TRI_O" physical_port="seven_seg_led_an_tri_o" dir="out" left="3" right="0">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="seven_seg_led_an_tri_o_0"/>
+              <pin_map port_index="1" component_pin="seven_seg_led_an_tri_o_1"/>
+              <pin_map port_index="2" component_pin="seven_seg_led_an_tri_o_2"/>
+              <pin_map port_index="3" component_pin="seven_seg_led_an_tri_o_3"/>
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="master" name="seven_seg_led_disp" type="xilinx.com:interface:gpio_rtl:1.0" of_component="seven_seg_led_disp" preset_proc="seven_seg_led_seg_preset">
+        <port_maps>
+          <port_map logical_port="TRI_O" physical_port="seven_seg_led_disp_tri_o" dir="out" left="7" right="0">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="seven_seg_led_disp_tri_o_0"/>
+              <pin_map port_index="1" component_pin="seven_seg_led_disp_tri_o_1"/>
+              <pin_map port_index="2" component_pin="seven_seg_led_disp_tri_o_2"/>
+              <pin_map port_index="3" component_pin="seven_seg_led_disp_tri_o_3"/>
+              <pin_map port_index="4" component_pin="seven_seg_led_disp_tri_o_4"/>
+              <pin_map port_index="5" component_pin="seven_seg_led_disp_tri_o_5"/>
+              <pin_map port_index="6" component_pin="seven_seg_led_disp_tri_o_6"/>
+              <pin_map port_index="7" component_pin="seven_seg_led_disp_tri_o_7"/>
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="slave" name="sys_clock" type="xilinx.com:signal:clock_rtl:1.0" of_component="sys_clock" preset_proc="sys_clock_preset">
+        <port_maps>
+          <port_map logical_port="CLK" physical_port="clk" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="clk"/>
+            </pin_maps>
+          </port_map>
+        </port_maps>
+        <parameters>
+          <parameter name="frequency" value="50000000"/>
+        </parameters>
+      </interface>
+      <interface mode="master" name="usb_uart" type="xilinx.com:interface:uart_rtl:1.0" of_component="usb_uart" preset_proc="uart_preset">
+        <description>USB UART</description>
+        <port_maps>
+          <port_map logical_port="TxD" physical_port="usb_uart_txd" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="usb_uart_txd"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="RxD" physical_port="usb_uart_rxd" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="usb_uart_rxd"/>
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="master" name="wifi_uart" type="xilinx.com:interface:uart_rtl:1.0" of_component="wifi_uart" preset_proc="uart_preset">
+        <description>ESP8266 WiFi module serial port</description>
+        <port_maps>
+          <port_map logical_port="TxD" physical_port="wifi_uart_txd" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="wifi_uart_txd"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="RxD" physical_port="wifi_uart_rxd" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="wifi_uart_rxd"/>
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="master" name="bt_uart" type="xilinx.com:interface:uart_rtl:1.0" of_component="bt_uart" preset_proc="uart_preset">
+        <description>HM-10 Bluetooth module serial port</description>
+        <port_maps>
+          <port_map logical_port="TxD" physical_port="bt_uart_txd" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="bt_uart_txd"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="RxD" physical_port="bt_uart_rxd" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="bt_uart_rxd"/>
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+    </interfaces>
+  </component>
+  <component name="dip_switches_16bits" display_name="16 Slide Switches" type="chip" sub_type="switch" major_group="GPIO">
+    <description>Slide switches SW3-SW18, sw[15:0] as in EDGE_Artix7_Master.xdc</description>
+  </component>
+  <component name="led_16bits" display_name="16 LEDs" type="chip" sub_type="led" major_group="GPIO">
+    <description>LEDs D3-D19 (excluding D7), active high</description>
+  </component>
+  <component name="push_buttons_4bits" display_name="4 Push Buttons" type="chip" sub_type="push_button" major_group="GPIO">
+    <description>Push buttons 3 to 0 [Down Right Left Up], active high</description>
+  </component>
+  <component name="qspi_flash" display_name="QSPI Flash" type="chip" sub_type="memory_flash_qspi" major_group="External Memory">
+    <description>8 MB Quad SPI flash (U14)</description>
+  </component>
+  <component name="reset" display_name="CPU Reset (centre button)" type="chip" sub_type="reset" major_group="Reset">
+    <description>Centre push button SW22 (M14), active high</description>
+  </component>
+  <component name="seven_seg_led_an" display_name="7 Segment Display - Digit Enables" type="chip" sub_type="led" major_group="GPIO">
+    <description>Digit enables DISP1-DISP4, active high</description>
+  </component>
+  <component name="seven_seg_led_disp" display_name="7 Segment Display - Segments" type="chip" sub_type="led" major_group="GPIO">
+    <description>Segments a-g and dp, active low (shared with SDRAM A5-A12)</description>
+  </component>
+  <component name="sys_clock" display_name="System Clock" type="chip" sub_type="system_clock" major_group="Clocks">
+    <description>50 MHz oscillator Y2 on pin N11</description>
+  </component>
+  <component name="usb_uart" display_name="USB UART" type="chip" sub_type="uart" major_group="UART">
+    <description>FT2232H USB-UART (FPGA TX C4, FPGA RX D4)</description>
+  </component>
+  <component name="wifi_uart" display_name="WiFi UART (ESP8266)" type="chip" sub_type="uart" major_group="UART">
+    <description>ESP8266-12F serial port (FPGA TX J15, FPGA RX G16); fit jumper J3 to power the module</description>
+  </component>
+  <component name="bt_uart" display_name="Bluetooth UART (HM-10)" type="chip" sub_type="uart" major_group="UART">
+    <description>HM-10 BLE serial port (FPGA TX H14, FPGA RX J16); fit jumper J4 to power the module</description>
+  </component>
+</components>
+<jtag_chains>
+  <jtag_chain name="chain1">
+    <position name="0" component="part0"/>
+  </jtag_chain>
+</jtag_chains>
+<connections>
+  <connection name="part0_dip_switches_16bits" component1="part0" component2="dip_switches_16bits">
+    <connection_map name="part0_dip_switches_16bits_1" c1_st_index="1" c1_end_index="16" c2_st_index="0" c2_end_index="15"/>
+  </connection>
+  <connection name="part0_led_16bits" component1="part0" component2="led_16bits">
+    <connection_map name="part0_led_16bits_1" c1_st_index="17" c1_end_index="32" c2_st_index="0" c2_end_index="15"/>
+  </connection>
+  <connection name="part0_push_buttons_4bits" component1="part0" component2="push_buttons_4bits">
+    <connection_map name="part0_push_buttons_4bits_1" c1_st_index="33" c1_end_index="36" c2_st_index="0" c2_end_index="3"/>
+  </connection>
+  <connection name="part0_qspi_flash" component1="part0" component2="qspi_flash">
+    <connection_map name="part0_qspi_flash_1" c1_st_index="37" c1_end_index="41" c2_st_index="0" c2_end_index="4"/>
+  </connection>
+  <connection name="part0_reset" component1="part0" component2="reset">
+    <connection_map name="part0_reset_1" c1_st_index="42" c1_end_index="42" c2_st_index="0" c2_end_index="0"/>
+  </connection>
+  <connection name="part0_seven_seg_led_an" component1="part0" component2="seven_seg_led_an">
+    <connection_map name="part0_seven_seg_led_an_1" c1_st_index="43" c1_end_index="46" c2_st_index="0" c2_end_index="3"/>
+  </connection>
+  <connection name="part0_seven_seg_led_disp" component1="part0" component2="seven_seg_led_disp">
+    <connection_map name="part0_seven_seg_led_disp_1" c1_st_index="47" c1_end_index="54" c2_st_index="0" c2_end_index="7"/>
+  </connection>
+  <connection name="part0_sys_clock" component1="part0" component2="sys_clock">
+    <connection_map name="part0_sys_clock_1" c1_st_index="0" c1_end_index="0" c2_st_index="0" c2_end_index="0"/>
+  </connection>
+  <connection name="part0_usb_uart" component1="part0" component2="usb_uart">
+    <connection_map name="part0_usb_uart_1" c1_st_index="55" c1_end_index="56" c2_st_index="0" c2_end_index="1"/>
+  </connection>
+  <connection name="part0_wifi_uart" component1="part0" component2="wifi_uart">
+    <connection_map name="part0_wifi_uart_1" c1_st_index="57" c1_end_index="58" c2_st_index="0" c2_end_index="1"/>
+  </connection>
+  <connection name="part0_bt_uart" component1="part0" component2="bt_uart">
+    <connection_map name="part0_bt_uart_1" c1_st_index="59" c1_end_index="60" c2_st_index="0" c2_end_index="1"/>
+  </connection>
+</connections>
+</board>
