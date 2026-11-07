@@ -34,10 +34,10 @@
   <pin index="30" name="led_16bits_tri_o_13" iostandard="LVCMOS33" loc="R5"/>
   <pin index="31" name="led_16bits_tri_o_14" iostandard="LVCMOS33" loc="T10"/>
   <pin index="32" name="led_16bits_tri_o_15" iostandard="LVCMOS33" loc="T9"/>
-  <pin index="33" name="push_buttons_4bits_tri_i_0" iostandard="LVCMOS33" loc="K13"/>
-  <pin index="34" name="push_buttons_4bits_tri_i_1" iostandard="LVCMOS33" loc="M12"/>
-  <pin index="35" name="push_buttons_4bits_tri_i_2" iostandard="LVCMOS33" loc="L13"/>
-  <pin index="36" name="push_buttons_4bits_tri_i_3" iostandard="LVCMOS33" loc="L14"/>
+  <pin index="33" name="push_buttons_4bits_tri_i_0" iostandard="LVCMOS33" loc="L13"/>
+  <pin index="34" name="push_buttons_4bits_tri_i_1" iostandard="LVCMOS33" loc="L14"/>
+  <pin index="35" name="push_buttons_4bits_tri_i_2" iostandard="LVCMOS33" loc="M12"/>
+  <pin index="36" name="push_buttons_4bits_tri_i_3" iostandard="LVCMOS33" loc="K13"/>
   <pin index="37" name="qspi_csn" iostandard="LVCMOS33" loc="L12"/>
   <pin index="38" name="qspi_db0" iostandard="LVCMOS33" loc="J13"/>
   <pin index="39" name="qspi_db1" iostandard="LVCMOS33" loc="J14"/>
