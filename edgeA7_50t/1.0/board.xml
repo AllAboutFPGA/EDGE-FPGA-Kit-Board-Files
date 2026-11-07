@@ -259,7 +259,7 @@
     <description>LEDs D3-D19 (excluding D7), active high</description>
   </component>
   <component name="push_buttons_4bits" display_name="4 Push Buttons" type="chip" sub_type="push_button" major_group="GPIO">
-    <description>Push buttons 3 to 0 [Down Right Left Up], active high</description>
+    <description>Push buttons 3 to 0 [Up Left Down Right], active high</description>
   </component>
   <component name="qspi_flash" display_name="QSPI Flash" type="chip" sub_type="memory_flash_qspi" major_group="External Memory">
     <description>8 MB Quad SPI flash (U14)</description>
